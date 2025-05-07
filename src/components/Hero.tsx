@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import Profile from "./Profile";
 import Verse from "./Verse";
-import Photo from "../assets/Adib.jpg";
+import Photo from "../assets/Cropped.png";
 import { ThemeContext } from "../context/ThemeContext";
 
 function Hero() {
