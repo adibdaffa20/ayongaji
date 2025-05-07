@@ -1,4 +1,4 @@
-import { useState, useContext } from "react";
+import { useState } from "react";
 import type { Ayat } from "../../types/Surah";
 import Number from "../Number";
 import { useParams } from "react-router-dom";
