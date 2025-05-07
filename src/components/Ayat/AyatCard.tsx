@@ -2,7 +2,6 @@ import { useState, useContext } from "react";
 import type { Ayat } from "../../types/Surah";
 import Number from "../Number";
 import { useParams } from "react-router-dom";
-import { ThemeContext } from "../../context/ThemeContext";
 
 type AyatCardProps = {
   ayat: Ayat;
@@ -11,7 +10,6 @@ type AyatCardProps = {
 function AyatCard({ ayat }: AyatCardProps) {
   const [shareTooltip, setShareTooltip] = useState(false);
   const { surahId } = useParams<{ surahId: string }>();
-  const { theme } = useContext(ThemeContext);
   
   const handleShare = async () => {
     const shareText = `${ayat.teksArab}\n\n${ayat.teksLatin}\n\n${ayat.teksIndonesia}\n\nAl-Quran Surah ${surahId}:${ayat.nomorAyat}`;
